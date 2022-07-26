@@ -41,6 +41,7 @@ label {
     padding: 8px;
     color: #737373;
     cursor: text;
+    transition: 0.2s;
 }
 button {
     padding: 12px 0;
@@ -57,4 +58,23 @@ button {
 button:hover {
     color: white;
     background-color: #353535;
+}
+input:focus~label,
+input:valid~label{
+    top: -22px;
+    font-size: 10px;
+}
+textarea:focus~label,
+textarea:valid~label{
+    top: -22px;
+    font-size: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group {
+    flex-basis: 48%;
 }
